@@ -52,52 +52,56 @@ public class ExprListener extends ExprSimpleBaseListener {
 
     @Override
     public void exitExpr(final ExprContext ctx) {
+        Integer res = null;
+
         switch (ctx.expr().size()) {
             case 2:
-                final ExprContext leftExpr = ctx.expr().get(0);
-                final ExprContext rightExpr = ctx.expr().get(1);
+                final ExprContext leftExpr = ctx.expr(0);
+                final ExprContext rightExpr = ctx.expr(1);
 
                 final Integer leftInt = this.expressions.get(leftExpr);
                 final Integer rightInt = this.expressions.get(rightExpr);
 
-                Integer res = null;
-                // Mult.
                 if (ctx.MUL() != null) {
                     res = leftInt * rightInt;
+                    break;
                 }
-                // Div.
                 if (ctx.DIV() != null) {
                     res = leftInt / rightInt;
+                    break;
                 }
-                // Add.
                 if (ctx.ADD() != null) {
                     res = leftInt + rightInt;
+                    break;
                 }
-                // Sub.
                 if (ctx.SUB() != null) {
                     res = leftInt - rightInt;
+                    break;
                 }
 
-                this.expressions.put(ctx, res);
-                break;
+                throw new RuntimeException(String.format("Can not correct parse string '%s'!", ctx.getText()));
 
             case 1:
-                this.expressions.put(ctx, this.expressions.get(ctx.expr().get(0)));
+                final ExprContext expr = ctx.expr().get(0);
+
+                res = this.expressions.get(expr);
+
                 break;
 
             case 0:
-                this.expressions.put(ctx, Integer.parseInt(ctx.INT().getText()));
+                res = Integer.parseInt(ctx.INT().getText());
+
                 break;
 
             default:
-                // Incorrect situation.
                 throw new RuntimeException(String.format("Unknown stuation with expression: %s!", ctx.getText()));
         }
+
+        this.expressions.put(ctx, res);
     }
 
     @Override
     public void exitProg(final ProgContext ctx) {
-        // Save all calculated expression.
         for (final ExprContext expr : ctx.expr()) {
             this.results.add(this.expressions.get(expr));
         }
