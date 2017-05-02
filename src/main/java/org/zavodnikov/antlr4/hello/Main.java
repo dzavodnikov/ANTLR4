@@ -23,7 +23,8 @@
  */
 package org.zavodnikov.antlr4.hello;
 
-import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 
 /**
@@ -33,7 +34,7 @@ public class Main {
 
     public static HelloParser getParser(final String data) {
         // Create a CharStream that reads from standard input.
-        final ANTLRInputStream input = new ANTLRInputStream(data);
+        final CharStream input = CharStreams.fromString(data);
 
         // Create a lexer that feeds off of input CharStream.
         final HelloLexer lexer = new HelloLexer(input);

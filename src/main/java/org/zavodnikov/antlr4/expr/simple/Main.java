@@ -23,7 +23,8 @@
  */
 package org.zavodnikov.antlr4.expr.simple;
 
-import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
@@ -37,7 +38,7 @@ public class Main {
 
     public static int run(final String data) {
         // Create a CharStream that reads from standard input.
-        final ANTLRInputStream input = new ANTLRInputStream(data);
+        final CharStream input = CharStreams.fromString(data);
 
         // Create a lexer that feeds off of input CharStream.
         final ExprSimpleLexer lexer = new ExprSimpleLexer(input);

@@ -25,7 +25,8 @@ package org.zavodnikov.antlr4.expr.advanced;
 
 import java.io.IOException;
 
-import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
@@ -35,12 +36,12 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class MainVisitor {
 
     public static int run(final String data) throws IOException {
-        ANTLRInputStream input;
+        CharStream input;
         if (data == null) {
             // Create a CharStream that reads from standard input.
-            input = new ANTLRInputStream(System.in);
+            input = CharStreams.fromStream(System.in);
         } else {
-            input = new ANTLRInputStream(data);
+            input = CharStreams.fromString(data);
         }
 
         // Create a lexer that feeds off of input CharStream.
