@@ -1,4 +1,4 @@
-// Generated from org/zavodnikov/antlr4/brackets/Brackets.g4 by ANTLR 4.6
+// Generated from org\zavodnikov\antlr4\brackets\Brackets.g4 by ANTLR 4.7
 
     package org.zavodnikov.antlr4.brackets;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class BracketsParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -272,16 +272,16 @@ public class BracketsParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\t \4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\t \4\2\t\2\4\3\t"+
 		"\3\3\2\6\2\b\n\2\r\2\16\2\t\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3"+
 		"\3\5\3\27\n\3\3\3\3\3\7\3\33\n\3\f\3\16\3\36\13\3\3\3\2\3\4\4\2\4\2\2"+
-		"\"\2\7\3\2\2\2\4\26\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t\3\2\2\2\t\7\3"+
-		"\2\2\2\t\n\3\2\2\2\n\3\3\2\2\2\13\f\b\3\1\2\f\r\7\3\2\2\r\16\5\4\3\2\16"+
-		"\17\7\4\2\2\17\27\3\2\2\2\20\21\7\5\2\2\21\22\5\4\3\2\22\23\7\6\2\2\23"+
-		"\27\3\2\2\2\24\27\7\7\2\2\25\27\7\b\2\2\26\13\3\2\2\2\26\20\3\2\2\2\26"+
-		"\24\3\2\2\2\26\25\3\2\2\2\27\34\3\2\2\2\30\31\f\7\2\2\31\33\5\4\3\b\32"+
-		"\30\3\2\2\2\33\36\3\2\2\2\34\32\3\2\2\2\34\35\3\2\2\2\35\5\3\2\2\2\36"+
-		"\34\3\2\2\2\5\t\26\34";
+		"\2\"\2\7\3\2\2\2\4\26\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t\3\2\2\2\t\7"+
+		"\3\2\2\2\t\n\3\2\2\2\n\3\3\2\2\2\13\f\b\3\1\2\f\r\7\3\2\2\r\16\5\4\3\2"+
+		"\16\17\7\4\2\2\17\27\3\2\2\2\20\21\7\5\2\2\21\22\5\4\3\2\22\23\7\6\2\2"+
+		"\23\27\3\2\2\2\24\27\7\7\2\2\25\27\7\b\2\2\26\13\3\2\2\2\26\20\3\2\2\2"+
+		"\26\24\3\2\2\2\26\25\3\2\2\2\27\34\3\2\2\2\30\31\f\7\2\2\31\33\5\4\3\b"+
+		"\32\30\3\2\2\2\33\36\3\2\2\2\34\32\3\2\2\2\34\35\3\2\2\2\35\5\3\2\2\2"+
+		"\36\34\3\2\2\2\5\t\26\34";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

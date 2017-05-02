@@ -1,4 +1,4 @@
-// Generated from org/zavodnikov/antlr4/expr/simple/ExprSimple.g4 by ANTLR 4.6
+// Generated from org\zavodnikov\antlr4\expr\simple\ExprSimple.g4 by ANTLR 4.7
 
     package org.zavodnikov.antlr4.expr.simple;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ExprSimpleParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -311,17 +311,17 @@ public class ExprSimpleParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\n%\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\n%\4\2\t\2\4\3\t"+
 		"\3\3\2\6\2\b\n\2\r\2\16\2\t\3\3\3\3\3\3\3\3\3\3\3\3\5\3\22\n\3\3\3\3\3"+
 		"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\7\3 \n\3\f\3\16\3#\13\3\3\3\2"+
-		"\3\4\4\2\4\2\2(\2\7\3\2\2\2\4\21\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t\3"+
-		"\2\2\2\t\7\3\2\2\2\t\n\3\2\2\2\n\3\3\2\2\2\13\f\b\3\1\2\f\r\7\3\2\2\r"+
-		"\16\5\4\3\2\16\17\7\4\2\2\17\22\3\2\2\2\20\22\7\t\2\2\21\13\3\2\2\2\21"+
-		"\20\3\2\2\2\22!\3\2\2\2\23\24\f\b\2\2\24\25\7\5\2\2\25 \5\4\3\t\26\27"+
-		"\f\7\2\2\27\30\7\6\2\2\30 \5\4\3\b\31\32\f\6\2\2\32\33\7\7\2\2\33 \5\4"+
-		"\3\7\34\35\f\5\2\2\35\36\7\b\2\2\36 \5\4\3\6\37\23\3\2\2\2\37\26\3\2\2"+
-		"\2\37\31\3\2\2\2\37\34\3\2\2\2 #\3\2\2\2!\37\3\2\2\2!\"\3\2\2\2\"\5\3"+
-		"\2\2\2#!\3\2\2\2\6\t\21\37!";
+		"\3\4\4\2\4\2\2\2(\2\7\3\2\2\2\4\21\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t"+
+		"\3\2\2\2\t\7\3\2\2\2\t\n\3\2\2\2\n\3\3\2\2\2\13\f\b\3\1\2\f\r\7\3\2\2"+
+		"\r\16\5\4\3\2\16\17\7\4\2\2\17\22\3\2\2\2\20\22\7\t\2\2\21\13\3\2\2\2"+
+		"\21\20\3\2\2\2\22!\3\2\2\2\23\24\f\b\2\2\24\25\7\5\2\2\25 \5\4\3\t\26"+
+		"\27\f\7\2\2\27\30\7\6\2\2\30 \5\4\3\b\31\32\f\6\2\2\32\33\7\7\2\2\33 "+
+		"\5\4\3\7\34\35\f\5\2\2\35\36\7\b\2\2\36 \5\4\3\6\37\23\3\2\2\2\37\26\3"+
+		"\2\2\2\37\31\3\2\2\2\37\34\3\2\2\2 #\3\2\2\2!\37\3\2\2\2!\"\3\2\2\2\""+
+		"\5\3\2\2\2#!\3\2\2\2\6\t\21\37!";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

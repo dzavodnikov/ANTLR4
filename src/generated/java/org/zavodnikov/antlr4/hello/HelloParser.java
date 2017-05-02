@@ -1,4 +1,4 @@
-// Generated from org/zavodnikov/antlr4/hello/Hello.g4 by ANTLR 4.6
+// Generated from org\zavodnikov\antlr4\hello\Hello.g4 by ANTLR 4.7
 
     package org.zavodnikov.antlr4.hello;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class HelloParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -186,10 +186,10 @@ public class HelloParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\5\17\4\2\t\2\4\3"+
-		"\t\3\3\2\6\2\b\n\2\r\2\16\2\t\3\3\3\3\3\3\3\3\2\2\4\2\4\2\2\r\2\7\3\2"+
-		"\2\2\4\13\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t\3\2\2\2\t\7\3\2\2\2\t\n"+
-		"\3\2\2\2\n\3\3\2\2\2\13\f\7\3\2\2\f\r\7\4\2\2\r\5\3\2\2\2\3\t";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\5\17\4\2\t\2\4\3"+
+		"\t\3\3\2\6\2\b\n\2\r\2\16\2\t\3\3\3\3\3\3\3\3\2\2\4\2\4\2\2\2\r\2\7\3"+
+		"\2\2\2\4\13\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\t\3\2\2\2\t\7\3\2\2\2\t"+
+		"\n\3\2\2\2\n\3\3\2\2\2\13\f\7\3\2\2\f\r\7\4\2\2\r\5\3\2\2\2\3\t";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
