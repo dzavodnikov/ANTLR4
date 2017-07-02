@@ -1,4 +1,4 @@
-// Generated from org\zavodnikov\antlr4\brackets\Brackets.g4 by ANTLR 4.7
+// Generated from org/zavodnikov/antlr4/brackets/Brackets.g4 by ANTLR 4.7
 
     package org.zavodnikov.antlr4.brackets;
 
