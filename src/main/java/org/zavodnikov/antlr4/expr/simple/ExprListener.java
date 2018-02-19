@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2017 Dmitry Zavodnikov
+ * Copyright (c) 2012-2018 Dmitry Zavodnikov
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -40,7 +40,7 @@ public class ExprListener extends ExprSimpleBaseListener {
 
     private final Map<ExprContext, Integer> expressions = new HashMap<>();
 
-    private final List<Integer>             results     = new ArrayList<>();
+    private final List<Integer> results = new ArrayList<>();
 
     public int getResult() {
         if (this.results.isEmpty()) {

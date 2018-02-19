@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2017 Dmitry Zavodnikov
+ * Copyright (c) 2012-2018 Dmitry Zavodnikov
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -43,11 +43,11 @@ import org.zavodnikov.antlr4.expr.advanced.ExprAdvancedParser.PrintContext;
  */
 public class ExprListener extends ExprAdvancedBaseListener {
 
-    private final Map<String, Integer>            memory      = new HashMap<>();
+    private final Map<String, Integer> memory = new HashMap<>();
 
     private final Map<ParserRuleContext, Integer> expressions = new HashMap<>();
 
-    private int                                   result;
+    private int result;
 
     private void throwUnknownExpression(final ExprContext expr) {
         throw new RuntimeException(String.format("Unknown expression %s!", expr.getText()));

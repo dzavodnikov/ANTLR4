@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2017 Dmitry Zavodnikov
+ * Copyright (c) 2012-2018 Dmitry Zavodnikov
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ public class ExprVisitor extends ExprAdvancedBaseVisitor<Integer> {
 
     private final Map<String, Integer> memory = new HashMap<>();
 
-    private int                        result;
+    private int result;
 
     public int getResult() {
         return this.result;
